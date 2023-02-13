@@ -4,20 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="./tailwind.config.js"></script>
-
 		<title>Document</title>
 	</head>
-	<body>
+	<body class="">
 		<nav class="bg-[#2c2c32]">
-			<div class="content">
+			<div class="flex justify-between text-white content h-14 px-80">
 				<ul
-					class="flex text-gray-100 items-center w-7/12 justify-between"
+					class="flex items-center justify-between w-7/12 text-gray-100"
 				>
 					<div
-						class="flex items-center justify-between text-xl text-white font-medium"
+						class="flex items-center justify-between text-xl font-medium text-white"
 					>
 						<img src="./assets/index.png" alt="" class="h-6 mr-2" />
 						<span>Visual Studio Code</span>
@@ -30,7 +29,7 @@
 					<li>FAQ</li>
 					<li>Learn</li>
 				</ul>
-				<div class="flex items-center bg-zinc-700">
+				<div class="flex items-centerbg-zinc-700">
 					<div class="flex items-center justify-between px-4 w-44">
 						<img src="./assets/search.svg" alt="" class="h-4" />
 						<input
@@ -42,7 +41,11 @@
 					<button
 						class="bg-[#0066b8] border-0 flex items-center justify-around px-4 text-sm font-bold h-full"
 					>
-						<img class="h-4 mr-2" src="./assets/download.svg" alt="" />
+						<img
+							class="h-4 mr-2"
+							src="./assets/download.svg"
+							alt=""
+						/>
 						<span>Download</span>
 					</button>
 				</div>
@@ -53,37 +56,51 @@
 				<p
 					class="text-[#cccccc] tracking-wide text-base flex items-center justify-center py-2 font-sans bg-[#25252b]"
 				>
-					<span class="text-[#0066b8] px-2">Version 1.75</span> is now
-					available! Read about the new features and fixes from
+					<span class="text-[#0066b8] px-2">Version 1.75</span>
+					is now available! Read about the new features and fixes from
 					January.
 				</p>
 			</div>
-			<div class="hero flex">
-				<div
-					class="left flex items-center justify-center bg-[#2c2c32] w-1/2"
-				>
-					<ul class="flex items-center flex-col justify-around h-3/5">
-						<li class="text-6xl">Code editing.</li>
-						<li class="text-6xl">Redefined.</li>
-						<li class="text-xl">Free. Built on open source. Run everywhere.</li>
-						<li class="flex item-center justify-center">
-							<button class="bg-[#0066b8] flex flex-col border-0
-							text-white text-lg px-6 py-2 mr-1">
-								Download for Windows <span class="text-sm text-[#e6eff6]">Stable Build</span>
+			<div class="flex hero items-center justify-center bg-[#2c2c32]">
+				<div class="flex justify-between h-5/6 left">
+					<ul
+						class="flex flex-col items-center justify-around h-100"
+					>
+						<li class="text-6xl text-white">Code editing.</li>
+						<li class="text-6xl text-white">Redefined.</li>
+						<li class="text-xl text-[#a7a7a9]">
+							Free. Built on open source. Run everywhere.
+						</li>
+						<li class="flex justify-center item-center">
+							<button
+								class="bg-[#0066b8] flex flex-col border-0 text-white text-lg px-6 py-2 mr-1"
+							>
+								Download for Windows
+								<span class="text-sm text-[#e6eff6]"
+									>Stable Build</span
+								>
 							</button>
-							<div class="bg-[#0066b8] h-[64px] w-[2em] flex items-center justify-center">
-								<img src="./assets/chevronDown.svg" alt="" class="h-4">
+							<div
+								class="bg-[#0066b8] h-[64px] w-[3em] flex items-center justify-center"
+							>
+								<img
+									src="./assets/chevronDown.svg"
+									alt=""
+									class="h-4"
+								/>
 							</div>
 						</li>
-						<li class="bg-zinc-900 p-2 text-[#aaaaad]">
-							<span class="text-[#0066b8]">Web</span>,
-							<span class="text-[#0066b8]">Insiders edition</span>, or
-							<span class="text-[#0066b8]">other platforms</span>
+						<li
+							class="bg-[#25252b] py-2 px-4 rounded-xl text-[#aaaaad]"
+						>
+							<span class="text-[#0098ff]">Insiders edition</span
+							>, or <span class="text-[#0098ff]">Web</span>,
+							<span class="text-[#0098ff]">other platforms</span>
 						</li>
 						<li></li>
 					</ul>
 				</div>
-				<div class="right bg-[#2c2c32] w-[720px] my-4">
+				<div class="right bg-[#2c2c32] w-[720px] py-16">
 					<img src="./assets/home-screenshot-win-lg.png" alt="" />
 				</div>
 			</div>
