@@ -1,109 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <link rel="stylesheet" href="style.css" /> -->
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script src="./tailwind.config.js"></script>
-		<title>Document</title>
-	</head>
-	<body class="">
-		<nav class="bg-[#2c2c32]">
-			<div class="flex justify-between text-white content h-14 px-80">
-				<ul
-					class="flex items-center justify-between w-7/12 text-gray-100"
-				>
-					<div
-						class="flex items-center justify-between text-xl font-medium text-white"
-					>
-						<img src="./assets/index.png" alt="" class="h-6 mr-2" />
-						<span>Visual Studio Code</span>
-					</div>
-					<li>Docs</li>
-					<li>Updates</li>
-					<li>Blogs</li>
-					<li>API</li>
-					<li>Extensions</li>
-					<li>FAQ</li>
-					<li>Learn</li>
-				</ul>
-				<div class="flex items-centerbg-zinc-700">
-					<div class="flex items-center justify-between px-4 w-44">
-						<img src="./assets/search.svg" alt="" class="h-4" />
-						<input
-							type="text"
-							placeholder="Search Docs"
-							class="text-[#b7b7ba] bg-[#3f3f46] w-4/5 border-0 text-sm h-full focus:outline-none"
-						/>
-					</div>
-					<button
-						class="bg-[#0066b8] border-0 flex items-center justify-around px-4 text-sm font-bold h-full"
-					>
-						<img
-							class="h-4 mr-2"
-							src="./assets/download.svg"
-							alt=""
-						/>
-						<span>Download</span>
-					</button>
-				</div>
-			</div>
-		</nav>
-		<main>
-			<div class="update">
-				<p
-					class="text-[#cccccc] tracking-wide text-base flex items-center justify-center py-2 font-sans bg-[#25252b]"
-				>
-					<span class="text-[#0066b8] px-2">Version 1.75</span>
-					is now available! Read about the new features and fixes from
-					January.
-				</p>
-			</div>
-			<div class="flex hero items-center justify-center bg-[#2c2c32]">
-				<div class="flex justify-between h-5/6 left">
-					<ul
-						class="flex flex-col items-center justify-around h-100"
-					>
-						<li class="text-6xl text-white">Code editing.</li>
-						<li class="text-6xl text-white">Redefined.</li>
-						<li class="text-xl text-[#a7a7a9]">
-							Free. Built on open source. Run everywhere.
-						</li>
-						<li class="flex justify-center item-center">
-							<button
-								class="bg-[#0066b8] flex flex-col border-0 text-white text-lg px-6 py-2 mr-1"
-							>
-								Download for Windows
-								<span class="text-sm text-[#e6eff6]"
-									>Stable Build</span
-								>
-							</button>
-							<div
-								class="bg-[#0066b8] h-[64px] w-[3em] flex items-center justify-center"
-							>
-								<img
-									src="./assets/chevronDown.svg"
-									alt=""
-									class="h-4"
-								/>
-							</div>
-						</li>
-						<li
-							class="bg-[#25252b] py-2 px-4 rounded-xl text-[#aaaaad]"
-						>
-							<span class="text-[#0098ff]">Insiders edition</span
-							>, or <span class="text-[#0098ff]">Web</span>,
-							<span class="text-[#0098ff]">other platforms</span>
-						</li>
-						<li></li>
-					</ul>
-				</div>
-				<div class="right bg-[#2c2c32] w-[720px] py-16">
-					<img src="./assets/home-screenshot-win-lg.png" alt="" />
-				</div>
-			</div>
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="">
+    <!-- NavBar -->
+    <nav class="bg-[#2c2c32]">
+      <div class="flex justify-between text-white content h-14 px-80">
+        <ul class="flex items-center justify-between w-7/12 text-gray-100">
+          <div
+            class="flex items-center justify-between text-xl font-medium text-white"
+          >
+            <img src="./assets/index.png" alt="" class="h-6 mr-2" />
+            <span>Visual Studio Code</span>
+          </div>
+          <li>Docs</li>
+          <li>Updates</li>
+          <li>Blogs</li>
+          <li>API</li>
+          <li>Extensions</li>
+          <li>FAQ</li>
+          <li>Learn</li>
+        </ul>
+        <div class="flex items-center bg-zinc-700">
+          <div class="flex items-center justify-between px-4 w-44">
+            <img src="./assets/search.svg" alt="" class="h-4" />
+            <input
+              type="text"
+              placeholder="Search Docs"
+              class="text-[#b7b7ba] bg-[#3f3f46] w-4/5 border-0 text-sm h-full focus:outline-none"
+            />
+          </div>
+          <button
+            class="bg-[#0066b8] border-0 flex items-center justify-around px-4 text-sm font-bold h-full"
+          >
+            <img class="h-4 mr-2" src="./assets/download.svg" alt="" />
+            <span>Download</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!--Main section -->
+    <main>
+      <!-- update banner -->
+      <div class="update">
+        <p
+          class="text-[#cccccc] tracking-wide text-base flex items-center justify-center py-2 font-sans bg-[#25252b]"
+        >
+          <span class="text-[#0066b8] px-2">Version 1.75</span>
+          is now available! Read about the new features and fixes from January.
+        </p>
+      </div>
+
+      <!-- Hero section -->
+      <div class="flex hero items-center justify-center bg-[#2c2c32]">
+        <!--left section-->
+        <div class="flex justify-between h-[36vh] mb-40 mr-12">
+          <ul class="flex flex-col items-center justify-around h-100">
+            <li class="text-5xl font-light text-white">Code editing.</li>
+            <li class="text-5xl text-white">Redefined.</li>
+            <li class="text-xl text-[#a7a7a9] mb-6">
+              Free. Built on open source. Run everywhere.
+            </li>
+            <li class="flex justify-center item-center">
+              <button
+                class="bg-[#0066b8] flex flex-col border-0 text-white text-lg px-6 py-2 mr-1"
+              >
+                Download for Windows
+                <span class="text-sm text-[#e6eff6]">Stable Build</span>
+              </button>
+              <div
+                class="bg-[#0066b8] h-[64px] w-[3em] flex items-center justify-center"
+              >
+                <img src="./assets/chevronDown.svg" alt="" class="h-4" />
+              </div>
+            </li>
+            <li
+              class="bg-[#25252b] py-2 px-5 rounded-xl text-[#aaaaad] text-sm"
+            >
+              <span class="text-[#0098ff]">Web</span>,
+              <span class="text-[#0098ff]">Insiders edition</span>, or
+              <span class="text-[#0098ff]">other platforms</span>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+
+        <!-- right section -->
+        <div class="right bg-[#2c2c32] w-[720px] py-10">
+          <img src="./assets/home-screenshot-win-lg.png" alt="" />
+        </div>
+      </div>
+      <div class="flex items-center justify-center parent">
+        <div
+          class="flex items-center justify-between w-3/6 h-32 text-xl font-light"
+        >
+          <div class="flex flex-col items-center inteli">
+            <img src="./assets/Vectorbulb.svg" class="h-16" alt="" />
+            <span>IntelliSense</span>
+          </div>
+          <div class="flex flex-col items-center debug">
+            <img src="./assets/Vectordebugger.svg" class="h-16" alt="" />
+            <span>Run and Debug</span>
+          </div>
+          <div class="flex flex-col items-center git">
+            <img src="./assets/Vectorbranch.svg" alt="" class="h-16" />
+            <span>Built-in Git</span>
+          </div>
+          <div class="flex flex-col items-center contain">
+            <img src="./assets/Vectorcontain.svg" class="h-16" alt="" />
+            <span>Extensions</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- reviews -->
+      <div
+        class="reviews profile h-64 w-screen bg-[#f5f5f5] justify-evenly items-center flex"
+      >
+        <div class="left-arrow">
+          <img
+            src="./assets/left_arrow.svg"
+            class="h-40 fill-[#7b7b7b]"
+            alt=""
+          />
+        </div>
+        <section class="flex w-1/6">
+          <img
+            src="./assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+            class="block h-16"
+          />
+          <article class="h-40%">
+            <p class="text-sm">Hehe <span>@hehe</span></p>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates quibusdam deleniti aliquid maiores mollitia similique
+              soluta.
+            </p>
+          </article>
+        </section>
+        <section class="flex w-1/6">
+          <img
+            src="./assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+            class="h-16"
+          />
+          <article class="h-40%">
+            <p class="text-sm">Haha <span>@haha</span></p>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates quibusdam deleniti aliquid maiores mollitia similique
+              soluta.
+            </p>
+          </article>
+        </section>
+        <section class="flex w-1/6">
+          <img
+            src="./assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+            class="h-16"
+          />
+          <article class="">
+            <p class="text-sm">Hoho <span>@hoho</span></p>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates quibusdam deleniti aliquid maiores mollitia similique
+              soluta.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
