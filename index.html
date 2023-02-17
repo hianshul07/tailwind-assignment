@@ -134,11 +134,7 @@
         class="reviews profile h-72 w-screen justify-center bg-[#f5f5f5] items-center flex"
       >
         <div class="px-4 left-arrow">
-          <img
-            src="./assets/left_arrow.svg"
-            class="w-10 fill-[#7b7b7b]"
-            alt=""
-          />
+          <img src="./assets/left_arrow.svg" class="w-10" alt="" />
         </div>
         <section class="flex w-1/6">
           <img
@@ -186,11 +182,7 @@
           </article>
         </section>
         <div class="left-arrow">
-          <img
-            src="./assets/right_arrow.svg"
-            class="w-10 fill-[#7b7b7b]"
-            alt=""
-          />
+          <img src="./assets/right_arrow.svg" class="w-10" alt="" />
         </div>
       </div>
 
@@ -200,7 +192,9 @@
       <section class="flex items-start justify-center pt-10 font-light h-72">
         <img src="./assets/home-intellisense (1).svg" alt="" class="h-56" />
         <article class="w-2/5 pl-40">
-          <h2 class="text-3xl">Deploy with confidence and ease.</h2>
+          <h2 class="text-3xl text-[#444444]">
+            Deploy with confidence and ease.
+          </h2>
           <p class="mt-10 text-lg text-justify">
             Go beyond syntax highlighting and autocomplete with IntelliSense,
             which provides smart completions based on variable types, function
@@ -214,7 +208,7 @@
         class="flex font-light items-start justify-center pt-10 h-72 bg-[#f5f5f5]"
       >
         <article class="w-2/5 pr-40">
-          <h2 class="text-3xl">
+          <h2 class="text-3xl text-[#444444]">
             Print statement debugging is a thing of the past.
           </h2>
           <p class="mt-10 text-lg text-justify">
@@ -231,7 +225,7 @@
       <section class="flex items-start justify-center pt-10 font-light h-72">
         <img src="./assets/home-git.svg" alt="" class="h-56" />
         <article class="w-2/5 pl-40">
-          <h2 class="text-3xl">Git commands built-in.</h2>
+          <h2 class="text-3xl text-[#444444]">Git commands built-in.</h2>
           <p class="mt-10 text-lg text-justify">
             Working with Git and other SCM providers has never been easier.
             Review diffs, stage files, and make commits right from the editor.
@@ -246,12 +240,13 @@
         class="flex font-light items-start justify-center pt-10 h-72 bg-[#f5f5f5]"
       >
         <article class="w-2/5 pr-40">
-          <h2 class="text-3xl">Extensible and customizable.</h2>
+          <h2 class="text-3xl text-[#444444]">Extensible and customizable.</h2>
           <p class="mt-10 text-lg text-justify">
             Want even more features? Install extensions to add new languages,
             themes, debuggers, and to connect to additional services. Extensions
             run in separate processes, ensuring they won't slow down your
-            editor. <span class="text-[#0071bc]">Learn more about extensions.</span>
+            editor.
+            <span class="text-[#0071bc]">Learn more about extensions.</span>
           </p>
         </article>
         <img src="./assets/Extensions.png" alt="" class="h-56" />
@@ -261,7 +256,9 @@
       <section class="flex items-start justify-center pt-10 font-light h-72">
         <img src="./assets/home-azure.svg" alt="" class="h-56" />
         <article class="w-2/5 pl-40">
-          <h2 class="text-3xl">Deploy with confidence and ease.</h2>
+          <h2 class="text-3xl text-[#444444]">
+            Deploy with confidence and ease.
+          </h2>
           <p class="mt-10 text-lg text-justify">
             With <span class="text-[#0071bc]">Microsoft Azure</span> you can
             deploy and host your React, Angular, Vue, Node, Python (and more!)
@@ -271,6 +268,123 @@
           </p>
         </article>
       </section>
+
+      <!-- languages section -->
+
+      <!-- upper -->
+
+      <div
+        class="flex flex-col items-center justify-center gap-y-8 h-80 bg-[#f5f5f5] languages"
+      >
+        <h2 class="text-3xl font-thin text-[#444444]">VS Code for</h2>
+
+        <section class="w-2/4 upper">
+          <ul class="flex justify-between flex-1 text-xl upper">
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/javascript.svg"
+                alt=""
+              />
+              <span>Javascript</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/python.svg"
+                alt=""
+              />
+              <span> Python</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/java.svg"
+                alt=""
+              />
+              <span> Java</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/markdown.svg"
+                alt=""
+              />
+              <span>Markdown</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/typescript.svg"
+                alt=""
+              />
+              <span>TypeScript</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/cpp.svg"
+                alt=""
+              /><span>C/C++</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- lower -->
+        <section class="w-2/4 lower">
+          <ul class="flex justify-between flex-1 text-xl lower">
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/json.svg"
+                alt=""
+              />
+              <span>JSON</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/powershell.svg"
+                alt=""
+              />
+              <span>Powershell</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/html.svg"
+                alt=""
+              />
+              <span>HTML/CSS</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/csharp.svg"
+                alt=""
+              />
+              <span>C#</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/php.svg"
+                alt=""
+              />
+              <span>PHP</span>
+            </li>
+            <li class="flex flex-1 font-light">
+              <img
+                class="block h-8"
+                src="./assets/language-icons/yaml.svg"
+                alt=""
+              />
+              <span>YAML</span>
+            </li>
+          </ul>
+        </section>
+        
+      </div>
     </main>
   </body>
 </html>
