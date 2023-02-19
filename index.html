@@ -401,14 +401,14 @@
     </main>
 
     <!-- downloads section -->
-    <section class="downloads flex h-64">
+    <section class="downloads flex justify-center py-16">
       <!-- Windows -->
       <section class="#1 flex items-center flex-col">
-        <img src="/assets/windows-logo.png" alt="" class="h-28 w-28" />
+        <img src="/assets/windows-logo.png" alt="" class="h-28 w-28 mb-4" />
         <div class="download-btn">
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold px-12 py-4"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-56 h-20"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
@@ -420,16 +420,30 @@
       </section>
 
       <!-- Linux -->
-      <section class="#1 flex items-center flex-col">
-        <img src="/assets/linux-logo.png" alt="" class="h-28 w-28" />
-        <div class="download-btn">
+      <section class="#1 flex items-center flex-col px-10">
+        <img src="/assets/linux-logo.png" alt="" class="h-28 w-28 mb-4" />
+        <div class="download-btn flex gap-1">
+
+          <!-- Deb -->
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold px-12 py-4"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-40 h-20"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
-              <span>Windows</span>
+              <span>.deb</span>
+            </div>
+            <p class="text-xs">Windows 8, 10, 11</p>
+          </button>
+
+          <!-- RPM -->
+          <button
+            href="hhehe"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-40 h-20" 
+          >
+            <div class="flex items-center">
+              <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
+              <span>.rpm</span>
             </div>
             <p class="text-xs">Windows 8, 10, 11</p>
           </button>
@@ -438,15 +452,15 @@
 
       <!-- Mac -->
       <section class="#1 flex flex-col items-center">
-        <img src="/assets/apple-logo.svg" alt="" class="h-28 w-28" />
+        <img src="/assets/apple-logo.svg" alt="" class="h-28 w-28 mb-4" />
         <div class="download-btn">
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold px-12 py-4"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-56 h-20"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
-              <span>Windows</span>
+              <span>Mac</span>
             </div>
             <p class="text-xs">Windows 8, 10, 11</p>
           </button>
