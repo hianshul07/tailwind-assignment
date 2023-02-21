@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <script src="./tailwind.config.js"></script>
-    <title>Document</title>
+    <title>VS-Code-Tailwind</title>
   </head>
   <body class="relative">
     <!-- NavBar -->
-    <div class="Disclaimer h-10 flex items-center justify-center bg-white"><p class="font-semibold text-[#2c2c32] text-2xl tracking-widest">*For educational purpose only*</p></div>
-    <nav
-      class="bg-[#2c2c32] sticky top-0 flex justify-center"
-    >
+    <div class="Disclaimer h-10 flex items-center justify-center bg-white">
+      <p class="font-semibold text-[#2c2c32] text-2xl tracking-widest">
+        *For educational purpose only*
+      </p>
+    </div>
+    <nav class="bg-[#2c2c32] sticky top-0 flex justify-center z-10">
       <div class="flex justify-between text-white content h-14 w-7/12">
-        <ul class="flex items-center justify-between w-7/12 text-[#ababaf]">
+        <ul class="flex items-center justify-between w-7/12 text-[#ababaf] hover:text-white">
           <div
             class="flex items-center justify-between text-xl font-medium text-white"
           >
@@ -31,19 +34,21 @@
           <li>FAQ</li>
           <li>Learn</li>
         </ul>
-        <div class="flex items-center  ">
-          <div class="flex items-center bg-zinc-700 h-full invisible xl:visible justify-between px-4 w-44">
+        <div class="flex items-center">
+          <div
+            class="flex items-center bg-zinc-700 h-full invisible xl:visible justify-between px-4 w-44 hover:bg-[#525257] hover:border-[1px] hover:border-[#757579]"
+          >
             <img src="./assets/search.svg" alt="" class="h-4" />
             <input
               type="text"
               placeholder="Search Docs"
-              class="invisible xl:visible text-[#b7b7ba] bg-[#3f3f46] w-4/5 border-0 text-sm h-full focus:outline-none"
+              class="invisible xl:visible text-[#b7b7ba] bg-[#3f3f46] w-4/5 border-0 text-sm h-full focus:outline-none hover:bg-[#525257]"
             />
           </div>
           <img src="./assets/search.svg" alt="" class="h-4 xl:hidden pr-4" />
 
           <button
-            class="bg-[#0066b8] border-0 flex items-center justify-around px-4 text-sm font-bold h-full"
+            class="bg-[#0066b8] border-0 flex items-center justify-around px-4 text-sm font-bold h-full hover:bg-[#005ba4]"
           >
             <img class="h-4 mr-2" src="./assets/download.svg" alt="" />
             <span>Download</span>
@@ -59,7 +64,7 @@
         <p
           class="text-[#cccccc] tracking-wide text-base flex items-center justify-center py-2 font-sans bg-[#25252b]"
         >
-          <span class="text-[#0066b8] px-2">Version 1.75</span>
+          <span class="text-[#0066b8] px-2 hover:underline">Version 1.75</span>
           is now available! Read about the new features and fixes from January.
         </p>
       </div>
@@ -76,13 +81,13 @@
             </li>
             <li class="flex justify-center item-center">
               <button
-                class="bg-[#0066b8] flex flex-col border-0 text-white text-lg px-6 py-2 mr-1"
+                class="bg-[#0066b8] flex flex-col border-0 text-white text-lg px-6 py-2 mr-1 hover:bg-[#005ba4]"
               >
                 Download for Windows
                 <span class="text-sm text-[#e6eff6]">Stable Build</span>
               </button>
               <div
-                class="bg-[#0066b8] h-[64px] w-[3em] flex items-center justify-center"
+                class="bg-[#0066b8] h-[64px] w-[3em] flex items-center justify-center hover:bg-[#005ba4]"
               >
                 <img src="./assets/chevronDown.svg" alt="" class="h-4" />
               </div>
@@ -90,16 +95,20 @@
             <li
               class="bg-[#25252b] py-2 px-5 rounded-xl text-[#aaaaad] text-sm"
             >
-              <span class="text-[#0098ff]">Web</span>,
-              <span class="text-[#0098ff]">Insiders edition</span>, or
-              <span class="text-[#0098ff]">other platforms</span>
+              <a href="" class="text-[#0098ff] hover:underline">Web</a>,
+              <a href="" class="text-[#0098ff] hover:underline"
+                >Insiders edition</a
+              >, or
+              <span class="text-[#0098ff] hover:underline"
+                ><a href="">other platforms</a></span
+              >
             </li>
             <li class="w-64 text-sm text-center">
               <p class="text-[#a9a9ab]">
                 By using VS Code, you agree to its
                 <br />
-                <span class="text-[#0098ff]"
-                  >license and privacy statement.</span
+                <a href="" class="text-[#0098ff] hover:underline"
+                  >license and privacy statement.</a
                 >
               </p>
             </li>
@@ -113,21 +122,29 @@
       </div>
       <div class="flex items-center justify-center parent">
         <div
-          class="flex items-center justify-between w-3/6 h-32 text-xl font-light"
+          class="flex items-center justify-between w-3/6 h-36 text-xl font-light"
         >
-          <div class="flex flex-col items-center inteli">
+          <div
+            class="flex flex-col items-center inteli h-full hover:bg-[#e3e3e3] justify-center w-1/4"
+          >
             <img src="./assets/Vectorbulb.svg" class="h-16" alt="" />
             <span>IntelliSense</span>
           </div>
-          <div class="flex flex-col items-center debug">
+          <div
+            class="flex flex-col items-center debug h-full hover:bg-[#e3e3e3] justify-center w-1/4"
+          >
             <img src="./assets/Vectordebugger.svg" class="h-16" alt="" />
             <span>Run and Debug</span>
           </div>
-          <div class="flex flex-col items-center git">
+          <div
+            class="flex flex-col items-center git h-full hover:bg-[#e3e3e3] justify-center w-1/4"
+          >
             <img src="./assets/Vectorbranch.svg" alt="" class="h-16" />
             <span>Built-in Git</span>
           </div>
-          <div class="flex flex-col items-center contain">
+          <div
+            class="flex flex-col items-center contain h-full hover:bg-[#e3e3e3] justify-center w-1/4"
+          >
             <img src="./assets/Vectorcontain.svg" class="h-16" alt="" />
             <span>Extensions</span>
           </div>
@@ -389,13 +406,13 @@
           </ul>
         </section>
 
-        <div class="others text-lg relative bottom-4 text-[#0071bc]">
+        <div class="others text-lg relative bottom-4 text-[#0071bc] hover:underline hover:text-[#005893]">
           <p>and many more languages on the Marketplace...</p>
         </div>
 
         <a
           href="https://code.visualstudio.com/docs"
-          class="bg-[#0066b8] text-white text-2xl mt-4 font-semibold px-12 py-4"
+          class="bg-[#0066b8] text-white text-2xl mt-4 font-semibold px-12 py-4 hover:bg-[#005ba4]"
         >
           Get Started Now
         </a>
@@ -410,7 +427,7 @@
         <div class="download-btn">
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-64 h-20"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-64 h-20 hover:bg-[#005ba4]"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
@@ -427,75 +444,75 @@
                   User Installer
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">x86</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">
-                  System Installer
+                  <a href="">System Installer</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">x86</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">.zip</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">x86</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">CLI</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">x86</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
             </tbody>
@@ -510,7 +527,7 @@
           <!-- Deb -->
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-40 h-20"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-40 h-20 hover:bg-[#005ba4]"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
@@ -522,7 +539,7 @@
           <!-- RPM -->
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-40 h-20"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-40 h-20 hover:bg-[#005ba4]"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
@@ -532,42 +549,42 @@
           </button>
         </div>
         <div class="download-links flex mt-6">
-          <table>
+          <table class="table">
             <tbody>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">.deb</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">Arm32</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">.rpm</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">Arm32</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
               <tr>
@@ -575,55 +592,47 @@
                   .tar.gz
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">Arm32</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
-              <tr>
+              <tr class="">
                 <td class="font-semibold text-[#444444] text-center">Snap</td>
+
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  colspan="2"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
-                </td>
-                <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
-                >
-                  x86
-                </td>
-                <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
-                >
-                  Arm64
+                  <a href="">Snap Store</a>
                 </td>
               </tr>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">CLI</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x64
+                  <a href="">x64</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  x86
+                  <a href="">Arm32</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Arm64
+                  <a href="">Arm64</a>
                 </td>
               </tr>
             </tbody>
@@ -637,7 +646,7 @@
         <div class="download-btn">
           <button
             href="hhehe"
-            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-64 h-20"
+            class="flex flex-col items-center bg-[#0066b8] text-white justify-center text-xl font-semibold w-64 h-20 hover:bg-[#005ba4]"
           >
             <div class="flex items-center">
               <img src="./assets/download.svg" alt="" class="h-4 mr-4" />
@@ -652,32 +661,32 @@
               <tr>
                 <td class="font-semibold text-[#444444] text-center">.zip</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Intel chip
+                  <a href="">Intel chip</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Apple silicon
+                  <a href="">Apple silicon</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Universal
+                  <a href="">Universal</a>
                 </td>
               </tr>
               <tr>
                 <td class="font-semibold text-[#444444] text-center">CLI</td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Intel chip
+                  <a href="">Intel chip</a>
                 </td>
                 <td
-                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px]"
+                  class="text-xs bg-[#0066b8] text-white border-8 border-white px-2 rounded-[10px] hover:bg-[#005ba4]"
                 >
-                  Apple silicon
+                  <a href="">Apple silicon</a>
                 </td>
               </tr>
             </tbody>
@@ -695,7 +704,7 @@
             Get the
             <a
               href="https://code.visualstudio.com/insiders/"
-              class="text-[#0071bc]"
+              class="text-[#0071bc] hover:underline hover:text-[#005893]"
               >Insiders build</a
             >
             instead.
@@ -704,8 +713,13 @@
 
         <div class="right leading-loose text-xl">
           <h2 class="text-2xl text-center">
-            Use <a href="vscode.dev" class="text-[#0071bc]">vscode.dev</a> for
-            quick edits <br />
+            Use
+            <a
+              href="vscode.dev"
+              class="text-[#0071bc] hover:underline hover:text-[#005893]"
+              >vscode.dev</a
+            >
+            for quick edits <br />
             online!
           </h2>
           <p class="font-light">GitHub, Azure Repos, and local files.</p>
@@ -721,13 +735,13 @@
           By downloading and using Visual Studio Code, you agree to the
           <a
             href="https://code.visualstudio.com/License/"
-            class="text-[#0071bc]"
+            class="text-[#0071bc] hover:underline hover:text-[#005893]"
             >license terms</a
           >
           and
           <a
             href="https://privacy.microsoft.com/en-US/privacystatement"
-            class="text-[#0071bc]"
+            class="text-[#0071bc] hover:underline hover:text-[#005893]"
             >privacy statement.</a
           >
           VS Code automatically sends telemetry data and crash dumps to help us
@@ -735,7 +749,7 @@
           please go see
           <a
             href="https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting"
-            class="text-[#0071bc]"
+            class="text-[#0071bc] hover:underline hover:text-[#005893]"
             >How to Disable Crash Reporting</a
           >
           to learn how to disable it.
@@ -750,7 +764,11 @@
       <div class="flex items-center justify-between w-3/5 content">
         <div class="flex justify-between text-sm w-[36%] font-semibold follow">
           <span>Hello from India.</span>
-          <a href="https://www.instagram.com/imanshul07/">Follow @imanshul07</a>
+          <a
+            href="https://www.instagram.com/imanshul07/"
+            class="hover:text-[#b4a0ff]"
+            >Follow @imanshul07</a
+          >
           <a
             class="github-button"
             href="https://github.com/hianshul07"
@@ -760,18 +778,19 @@
         </div>
 
         <ul class="flex items-start justify-between text-xs w-96 links">
-          <li>Support</li>
-          <li>Privacy</li>
-          <li>Terms of Use</li>
-          <li>License</li>
+          <li class="hover:text-[#b4a0ff]"><a href="">Support</a></li>
+          <li class="hover:text-[#b4a0ff]"><a href="">Privacy</a></li>
+          <li class="hover:text-[#b4a0ff]"><a href="">Terms of Use</a></li>
+          <li class="hover:text-[#b4a0ff]"><a href="">License</a></li>
           <li>
             <ul class="">
               <li>
-                <img
-                  src="./assets/microsoft-logo.png"
-                  alt=""
-                  class="block h-5"
-                />
+                <a href="https://www.microsoft.com/en-in/"
+                  ><img
+                    src="./assets/microsoft-logo.png"
+                    alt=""
+                    class="block h-5"
+                /></a>
               </li>
               <li class="text-xs">© 2023 Microsoft</li>
             </ul>
