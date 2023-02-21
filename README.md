@@ -4,8 +4,6 @@
 
 ![Project ScreenShot](./assets/screenshot.png)
 
-## Project Link
+## [Project Link](https://github.com/hianshul07/tailwind-assignment)
 
-## [Live Link](https://github.com/hianshul07/tailwind-assignment)
-
-[Live Link](https://hianshul07.github.io/tailwind-assignment/)
+## [Live Link](https://hianshul07.github.io/tailwind-assignment/)
